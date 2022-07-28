@@ -29,8 +29,8 @@ class sorter:
             print("All neccesary folders created")
     check_folder(new_path)
 
-#List Directory And Get Extension
-    def list_make(new_path,old_path):
+#List Directory And Get Extension And Copying Function
+    def list_make(new_path,old_path): 
         files = os.listdir(old_path)
         for x in range(0,len(files)):
             file_extension = pathlib.Path(files[x]).suffix
