@@ -3,6 +3,8 @@ import shutil
 import pathlib
 
 
+
+
 class sorter:
     user=os.getlogin()
     old_path = f"C:/Users/{user}/Downloads"
@@ -17,6 +19,14 @@ class sorter:
             print("Setting Up Directory")
             os.mkdir(new_path)
             print(".........\nDirectory's Setting Done")
+
+        folderfolder = os.path.isdir(new_path+"/"+"Folder")
+
+        if folderfolder is True:
+            print("All neccesary folders created")
+        else:
+            os.mkdir(new_path+"/"+"Folder")
+            print("All neccesary folders created")
     check_folder(new_path)
 
 #List Directory And Get Extension
@@ -37,12 +47,3 @@ class sorter:
                     shutil.move(old_path +"/"+files[x],new_path+"/"+file_extension)
 
     list_make(new_path,old_path)             
-
-
-
-        
-        
-
-        
-
-    
