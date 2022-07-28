@@ -1,8 +1,6 @@
 import os 
 import shutil
 import pathlib
-from tabnanny import check
-
 
 
 class sorter:
