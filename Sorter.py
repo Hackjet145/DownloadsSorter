@@ -23,7 +23,7 @@ class sorter:
         folderfolder = os.path.isdir(new_path+"/"+"Folder")
 
         if folderfolder is True:
-            print("All neccesary folders created")
+            print("All neccesary folders Present")
         else:
             os.mkdir(new_path+"/"+"Folder")
             print("All neccesary folders created")
