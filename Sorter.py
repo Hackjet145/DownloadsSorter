@@ -46,4 +46,5 @@ class sorter:
                     os.mkdir(path)
                     shutil.move(old_path +"/"+files[x],new_path+"/"+file_extension)
 
-    list_make(new_path,old_path)             
+    list_make(new_path,old_path)    
+    print("Done")   
